@@ -28,8 +28,8 @@ class MantisThumbLightboxPlugin extends MantisPlugin {
     function hookCoreReady() {
         global $g_scripts_included, $g_stylesheets_included;
         $g_scripts_included[] = '../plugins/MantisThumbLightbox/js/lightbox-loader.js';
-        $g_scripts_included[] = '../plugins/MantisThumbLightbox/assets/lightbox/js/lightbox.js';
-        $g_stylesheets_included[] = '/plugins/MantisThumbLightbox/assets/lightbox/css/lightbox.css';
+        $g_scripts_included[] = '../plugins/MantisThumbLightbox/assets/lightbox2/dist/js/lightbox.js';
+        $g_stylesheets_included[] = '/plugins/MantisThumbLightbox/assets/lightbox2/dist/css/lightbox.css';
         //$g_preview_attachments_inline_max_size = 3000000;
         //$g_preview_max_height = 500;
 
