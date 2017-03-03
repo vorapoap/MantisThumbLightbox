@@ -18,16 +18,12 @@ class MantisThumbLightboxPlugin extends MantisPlugin {
         return array(
             'EVENT_CORE_READY' => 'hookCoreReady',
             'EVENT_LAYOUT_CONTENT_BEGIN' => 'hookLayoutContentBegin',
-            'EVENT_LAYOUT_PAGE_HEADER' => 'hookLayoutPageHeader'
         );
     }
     function hookLayoutContentBegin() {
         if (!is_writable("plugins/MantisThumbLightbox/cache")) {
             echo '<div class="alert alert-danger" role="alert">Please make "plugins/MantisThumbLightbox/cache" writable.</div>';
         }
-    }
-    function hookLayoutPageHeader() {
-
     }
     function hookCoreReady() {
         global $g_scripts_included, $g_stylesheets_included;
