@@ -1,5 +1,5 @@
 $(function() {
-	$("div.bug-ttachment-preview-image a img").each(function() {
+	$("div.bug-attachment-preview-image a img").each(function() {
 		var $this = $(this);
 		var $a = $this.parent();
 		var $attachment = $a.parent().parent();
